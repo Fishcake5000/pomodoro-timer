@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Pomodoro timer</title>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-</head>
-<body>
-    <h1>Pomodoro clock</h1>
-    <div id="settings-container">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Pomodoro clock</h1>
+      <div id="settings-container">
         <div id="session-settings">
-            <button id="session-up" class="settings-bttn">Up</button>
-            <p id="session-display" class="settings-display">25</p>
-            <button id="session-down" class="settings-bttn">Down</button>
+          <button id="session-up" class="settings-bttn">Up</button>
+          <p id="session-display" class="settings-display">25</p>
+          <button id="session-down" class="settings-bttn">Down</button>
         </div>
         <div id="break-settings">
-            <button id="break-up" class="settings-bttn">Up</button>
-            <p id="break-display" class="settings-display">5</p>
-            <button id="break-down" class="settings-bttn">Down</button>
+          <button id="break-up" class="settings-bttn">Up</button>
+          <p id="break-display" class="settings-display">5</p>
+          <button id="break-down" class="settings-bttn">Down</button>
         </div>
-    </div>
-    <button id="timer-container">
-        <button id="start" class="bttn">Start</button>
-        <button id="reset" class="bttn">Reset</button>
+      </div>
+      <div id="timer-container">
+        <div id="timer-container-up">
+          <button id="start" class="bttn">Start</button>
+          <button id="reset" class="bttn">Reset</button>
+        </div>
         <p id="time-display">25:00</p>
-        <button id="pause" class="bttn">Pause</button>
-        <button id="stop" class="bttn">Stop</button>
-    </button>
+        <div id="timer-container-down">
+          <button id="pause" class="bttn">Pause</button>
+          <button id="stop" class="bttn">Stop</button>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
