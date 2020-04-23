@@ -94,9 +94,13 @@ function decreaseTimer() {
         if (minutes === 0 && session) {
             minutes = parseInt(breakSetting.textContent, 10);
             session = false;
+            const audio = document.querySelector('#beep');
+            audio.play();
         } else if (minutes === 0 && !session) {
             minutes = parseInt(sessionSetting.textContent, 10);
             session = true;
+            const audio = document.querySelector('#beep');
+            audio.play();
         } else {
             minutes--;
             seconds = 59;
