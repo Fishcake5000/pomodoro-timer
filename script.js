@@ -113,7 +113,7 @@ function decreaseTimer() {
 
 function start() {
     if (timerIsRunning) return;
-    interval = window.setInterval(decreaseTimer, 100);
+    interval = window.setInterval(decreaseTimer, 1000);
     timerIsRunning = true;
 }
 

@@ -116,4 +116,7 @@ h1 {
   :root {
     font-size: 12px;
   }
+  #container {
+    height: 50vh;
+  }
 }
